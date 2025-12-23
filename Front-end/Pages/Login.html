@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeleData Treinamentos - Login</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5495/5495002.png" type="image/png">
+  <link rel="stylesheet" href="../Styles/Login.css">
+  <link rel="stylesheet" href="../Styles/menu-header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="../JavaScript/login.js"></script>
+  <script src="../Scripts/login.js" defer></script>
+</head>
+
+<body>
+  <!-- ========================= Footer ========================== -->
+  <script src="/Front-end/JavaScript/loadFooter.js"></script>
+  <!-- Menu Superior -->
+  <header>
+    <div class="header-container"> <!-- Container principal do header -->
+      <!-- LOGOTIPO -->
+      <div class="logo">
+        <a href="./homePage.html">
+          <img src="https://i.pinimg.com/736x/6e/ad/87/6ead878978850d09e95fd5a1526dc712.jpg"
+            alt="TeleData Treinamentos"> <!-- Logo da empresa -->
+        </a>
+      </div>
+
+      <!-- BARRA DE PESQUISA -->
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar cursos..."> <!-- Campo de input para pesquisa -->
+        <div class="search-button"> <!-- Botão de pesquisa -->
+          <img src="https://cdn-icons-png.flaticon.com/512/2319/2319177.png" alt="search-button">
+          <!-- Ícone de lupa -->
+        </div>
+      </div>
+
+      <!-- MENU DE NAVEGAÇÃO E AÇÕES DO USUÁRIO -->
+      <div class="nav-actions">
+        <a href="#" class="nav-link">Categorias</a> <!-- Link para categorias -->
+        <a href="#" class="nav-link">Docente</a> <!-- Link para área do docente -->
+        <a href="/Front-end/Pages/Login.html">
+          <button class="nav-button">Entrar</button> <!-- Botão de login -->
+        </a>
+        <a href="/Front-end/Pages/Cadastro.html">
+          <button class="nav-button primary">Cadastrar</button> <!-- Botão de cadastro (destaque) -->
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="login-bg">
+      <img src="https://img.freepik.com/vetores-premium/um-homem-segurando-um-globo-na-mao_778176-254.jpg"
+        alt="Ilustração Login">
+    </section>
+
+    <section class="login-box">
+      <h2>Vamos aprender!</h2>
+
+      <form action="/makelogin" method="POST">
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input name="useremail" type="text" placeholder="Login" required>
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input name="userpassword" type="password" placeholder="Senha" required>
+        </div>
+
+        <div class="remember-me">
+          <input type="checkbox" id="remember-me">
+          <label for="remember-me">Lembrar minha senha</label>
+        </div>
+
+        <button type="submit" class="btn-entrar">Entrar</button>
+      </form>
+
+      <nav class="login-links">
+        <ul>
+          <li><a href="#">Esqueceu Senha?</a></li>
+          <li><a href="/registerpage">Criar uma conta</a></li>
+        </ul>
+      </nav>
+
+      <div class="separator">Ou entre com</div>
+
+      <aside class="social-login">
+        <img class="google-btn" src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Google">
+        <img class="apple-btn" src="https://cdn-icons-png.flaticon.com/512/84/84595.png" alt="Apple">
+        <img class="facebook-btn" src="https://cdn-icons-png.flaticon.com/512/3670/3670124.png" alt="Facebook">
+      </aside>
+    </section>
+  </main>
+
+  <script src="../Scripts/animations.js"></script>
+</body>
+
+</html>

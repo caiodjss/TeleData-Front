@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- METADADOS DA PÁGINA -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura viewport para responsividade -->
+    <title>TeleData Treinamentos</title> <!-- Título da página na aba do navegador -->
+
+    <!-- LINKS PARA RECURSOS EXTERNOS -->
+    <link rel="stylesheet" href="/Front-end/Styles/footer.css">
+    <link rel="stylesheet" href="/Front-end/Styles/menu-header.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5495/5495002.png" type="image/png"> <!-- Favicon -->
+    <link rel="stylesheet" href="/Front-end/Styles/HomePage.css"> <!-- Arquivo CSS principal -->
+    <script src="/Front-end/JavaScript/HomePage.js"></script> <!-- Arquivo JavaScript principal -->
+</head>
+
+<body>
+    <!-- ========================= HEADER ========================== -->
+    <script src="/Front-end/JavaScript/loadHeader.js"></script>
+    
+    <!-- CONTEÚDO PRINCIPAL DA PÁGINA -->
+    <main class="main-container">
+        <!-- SEÇÃO HERO BANNER (PRIMEIRA SEÇÃO VISÍVEL) -->
+        <section class="hero-banner">
+            <div class="hero-content">
+                <h1>Aprendizagem contínua, oportunidades infinitas</h1> <!-- Título principal -->
+                <p>Adquira novas habilidades com cursos ministrados por especialistas do setor. Aprenda no seu ritmo com
+                    acesso vitalício em dispositivos móveis e computadores.</p> <!-- Descrição -->
+                <a class="btn-explore" href="/Front-end/Pages/Catalogo.html">
+                    Explorar Cursos
+                </a>
+                <!-- CTA principal -->
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE CATEGORIAS POPULARES COM CARROSSEL -->
+        <section class="categories">
+            <h2 class="section-title">Categorias populares</h2> <!-- Título da seção -->
+
+            <!-- BOTÕES DE NAVEGAÇÃO DO CARROSSEL -->
+            <button class="carousel-arrow carousel-arrow-left" aria-label="Categorias anteriores">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" /> <!-- Ícone de seta esquerda -->
+                </svg>
+            </button>
+            <button class="carousel-arrow carousel-arrow-right" aria-label="Próximas categorias">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" /> <!-- Ícone de seta direita -->
+                </svg>
+            </button>
+
+            <!-- CONTAINER DO CARROSSEL DE CATEGORIAS -->
+            <div class="categories-carousel-container">
+                <div class="categories-carousel"> <!-- Carrossel propriamente dito -->
+                    <!-- CARTÃO DE CATEGORIA - DESENVOLVIMENTO -->
+                    <div class="category-card">
+                        <div class="category-content">
+                            <h3 class="category-title">Desenvolvimento</h3>
+                            <p class="category-description">Web, Mobile, Linguagens de Programação</p>
+                        </div>
+                    </div>
+
+                    <!-- CARTÃO DE CATEGORIA - NEGÓCIOS -->
+                    <div class="category-card">
+                        <div class="category-content">
+                            <h3 class="category-title">Negócios</h3>
+                            <p class="category-description">Análise Financeira, Gestão, Empreendedorismo</p>
+                        </div>
+                    </div>
+
+                    <!-- CARTÃO DE CATEGORIA - DESIGN -->
+                    <div class="category-card">
+                        <div class="category-content">
+                            <h3 class="category-title">Design</h3>
+                            <p class="category-description">UI/UX, Web Design, Ferramentas de Design</p>
+                        </div>
+                    </div>
+
+                    <!-- CARTÃO DE CATEGORIA - MARKETING -->
+                    <div class="category-card">
+                        <div class="category-content">
+                            <h3 class="category-title">Marketing</h3>
+                            <p class="category-description">Digital, SEO, Mídias Sociais</p>
+                        </div>
+                    </div>
+
+                    <!-- CARTÃO DE CATEGORIA - DATA SCIENCE -->
+                    <div class="category-card">
+                        <div class="category-content">
+                            <h3 class="category-title">Data Science</h3>
+                            <p class="category-description">Análise de Dados, Machine Learning</p>
+                        </div>
+                    </div>
+
+                    <!-- CARTÃO DE CATEGORIA - IDIOMAS -->
+                    <div class="category-card">
+                        <div class="category-content">
+                            <h3 class="category-title">Idiomas</h3>
+                            <p class="category-description">Inglês, Espanhol, Francês</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE CURSOS EM DESTAQUE COM CARROSSEL -->
+        <section class="featured-courses">
+            <h2 class="section-title">Cursos em destaque</h2> <!-- Título da seção -->
+
+            <!-- BOTÕES DE NAVEGAÇÃO DO CARROSSEL DE CURSOS -->
+            <button class="course-arrow course-arrow-left" aria-label="Cursos anteriores">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" /> <!-- Ícone seta esquerda -->
+                </svg>
+            </button>
+            <button class="course-arrow course-arrow-right" aria-label="Próximos cursos">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" /> <!-- Ícone seta direita -->
+                </svg>
+            </button>
+
+            <!-- CONTAINER DO CARROSSEL DE CURSOS -->
+            <div class="courses-carousel-container">
+                <div class="courses-carousel"> <!-- Carrossel de cursos -->
+
+                    <!-- CARTÃO DE CURSO - DESENVOLVIMENTO WEB -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://i.pinimg.com/736x/d6/19/a6/d619a64645bf2cbf8f32f9063cf29ac5.jpg"
+                                alt="Desenvolvimento Web"> <!-- Imagem do curso -->
+                            <div class="course-badge">Mais Vendido!</div> <!-- Badge de destaque -->
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Curso Completo de Desenvolvimento Web</h3> <!-- Título do curso -->
+                            <p class="course-instructor">Instrutor(a): João Silva</p> <!-- Nome do instrutor -->
+                            <div class="course-rating"> <!-- Avaliação e estrelas -->
+                                <div class="rating-stars">★★★★★</div> <!-- Estrelas de avaliação -->
+                                <div class="rating-details">
+                                    <span class="rating-value">4.8</span> <!-- Valor numérico da avaliação -->
+                                    <span class="rating-count">(4,934 avaliações)</span>
+                                    <!-- Quantidade de avaliações -->
+                                </div>
+                            </div>
+                            <div class="course-price-container"> <!-- Preço e botão de compra -->
+                                <p class="course-price">R$ 199,90</p> <!-- Preço do curso -->
+                                <button class="add-to-cart" aria-label="Adicionar ao carrinho"> <!-- Botão de compra -->
+                                    <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                        alt="Carrinho de compras"> <!-- Ícone do carrinho -->
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARTÃO DE CURSO - MARKETING DIGITAL -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://i.pinimg.com/736x/d9/2b/0e/d92b0e03ceff2632cd016e40473b5a03.jpg"
+                                alt="Marketing Digital">
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Marketing Digital</h3>
+                            <p class="course-instructor">Instrutor(a): Maria Santos</p>
+                            <div class="course-rating">
+                                <div class="rating-stars">★★★★☆</div>
+                                <div class="rating-details">
+                                    <span class="rating-value">4.5</span>
+                                    <span class="rating-count">(987 avaliações)</span>
+                                </div>
+                            </div>
+                            <div class="course-price-container">
+                                <p class="course-price">R$ 79,90</p>
+                                <button class="add-to-cart" aria-label="Adicionar ao carrinho">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                        alt="Carrinho de compras">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARTÃO DE CURSO - UI/UX DESIGN -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://i.pinimg.com/736x/50/c3/1a/50c31ababcbbd1a5c041c08914c564d9.jpg"
+                                alt="UI/UX Design">
+                            <div class="course-badge">Novo!</div> <!-- Badge de novo curso -->
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">UI/UX Design: Do Básico ao Avançado</h3>
+                            <p class="course-instructor">Instrutor(a): Pedro Almeida</p>
+                            <div class="course-rating">
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="rating-details">
+                                    <span class="rating-value">4.9</span>
+                                    <span class="rating-count">(2,105 avaliações)</span>
+                                </div>
+                            </div>
+                            <div class="course-price-container">
+                                <p class="course-price">R$ 249,90</p>
+                                <button class="add-to-cart" aria-label="Adicionar ao carrinho">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                        alt="Carrinho de compras">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARTÃO DE CURSO - PACOTE OFFICE -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://i.pinimg.com/736x/4d/68/ad/4d68adb13a01c58fda32b72e7ee37562.jpg"
+                                alt="Pacote Office e Windows">
+                            <div class="course-badge">Popular!</div> <!-- Badge de curso popular -->
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Pacote Office e Windows</h3>
+                            <p class="course-instructor">Instrutor(a): Mônica Alves</p>
+                            <div class="course-rating">
+                                <div class="rating-stars">★★★★☆</div>
+                                <div class="rating-details">
+                                    <span class="rating-value">4.8</span>
+                                    <span class="rating-count">(2,105 avaliações)</span>
+                                </div>
+                            </div>
+                            <div class="course-price-container">
+                                <p class="course-price">R$ 89,90</p>
+                                <button class="add-to-cart" aria-label="Adicionar ao carrinho">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                        alt="Carrinho de compras">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARTÃO DE CURSO - VIRTUALIZAÇÃO -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://i.pinimg.com/736x/06/76/0d/06760d785da894ca4af9045406f254c8.jpg"
+                                alt="Virtualização">
+                            <div class="course-badge">Promoção!</div> <!-- Badge de promoção -->
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Virtualização</h3>
+                            <p class="course-instructor">Instrutor(a): Caylanne Silva</p>
+                            <div class="course-rating">
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="rating-details">
+                                    <span class="rating-value">4.9</span>
+                                    <span class="rating-count">(1,012 avaliações)</span>
+                                </div>
+                            </div>
+                            <div class="course-price-container">
+                                <p class="course-price">R$ 49,90</p>
+                                <button class="add-to-cart" aria-label="Adicionar ao carrinho">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                        alt="Carrinho de compras">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARTÃO DE CURSO - ELETROELETRÔNICA -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://i.pinimg.com/736x/04/56/68/04566800964a3e8d5d2a505beaf23f1b.jpg"
+                                alt="Eletroeletrônica">
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Eletroeletrônica</h3>
+                            <p class="course-instructor">Instrutor(a): Fábio Alves</p>
+                            <div class="course-rating">
+                                <div class="rating-stars">★★★★☆</div>
+                                <div class="rating-details">
+                                    <span class="rating-value">4.7</span>
+                                    <span class="rating-count">(2,845 avaliações)</span>
+                                </div>
+                            </div>
+                            <div class="course-price-container">
+                                <p class="course-price">R$ 89,90</p>
+                                <button class="add-to-cart" aria-label="Adicionar ao carrinho">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                        alt="Carrinho de compras">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARTÃO DE CURSO - DESENVOLVIMENTO FULLSTACK -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://i.pinimg.com/736x/52/19/d9/5219d9b3f4606ed553479e91b2b9b8d2.jpg"
+                                alt="Desenvolvimento Fullstack">
+                            <div class="course-badge">Novo!</div>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Pacote completo de Desenvolvimento fullstack</h3>
+                            <p class="course-instructor">Instrutor(a): Antônio Santana</p>
+                            <div class="course-rating">
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="rating-details">
+                                    <span class="rating-value">5.0</span>
+                                    <span class="rating-count">(4,752 avaliações)</span>
+                                </div>
+                            </div>
+                            <div class="course-price-container">
+                                <p class="course-price">R$ 189,90</p>
+                                <button class="add-to-cart" aria-label="Adicionar ao carrinho">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                        alt="Carrinho de compras">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARTÃO DE CURSO - ALGORITMO PARA INICIANTES -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://i.pinimg.com/736x/ac/07/28/ac072899fd1b1f09556ed1958f81e397.jpg"
+                                alt="Algoritmo para Iniciantes">
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Algoritmo para Iniciantes</h3>
+                            <p class="course-instructor">Instrutor(a): Alice Menezes</p>
+                            <div class="course-rating">
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="rating-details">
+                                    <span class="rating-value">4.9</span>
+                                    <span class="rating-count">(1,548 avaliações)</span>
+                                </div>
+                            </div>
+                            <div class="course-price-container">
+                                <p class="course-price">R$ 89,90</p>
+                                <button class="add-to-cart" aria-label="Adicionar ao carrinho">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                        alt="Carrinho de compras">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE DEPOIMENTOS COM CARROSSEL AUTOMÁTICO -->
+        <section class="testimonials">
+            <h2 class="section-title">O que as pessoas dizem</h2> <!-- Título da seção -->
+
+            <div class="testimonial-carousel"> <!-- Container do carrossel de depoimentos -->
+                <div class="carousel-container">
+                    <div class="carousel-track"> <!-- Trilha do carrossel -->
+                        <!-- DEPOIMENTO 1 -->
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <p>"A TeleData transformou minha carreira! Os cursos são completos e os instrutores são
+                                    excepcionais."</p> <!-- Texto do depoimento -->
+                                <div class="testimonial-author"> <!-- Informações do autor -->
+                                    <h4>Carlos Mendonça</h4> <!-- Nome do autor -->
+                                    <p>Desenvolvedor Full Stack</p> <!-- Cargo/posição do autor -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- DEPOIMENTO 2 -->
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <p>"Consegui minha primeira vaga em marketing digital graças aos conhecimentos
+                                    adquiridos aqui."</p>
+                                <div class="testimonial-author">
+                                    <h4>Amanda Santos</h4>
+                                    <p>Especialista em Marketing Digital</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- DEPOIMENTO 3 -->
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <p>"A plataforma é intuitiva e os materiais são de alta qualidade. Superou minhas
+                                    expectativas!"</p>
+                                <div class="testimonial-author">
+                                    <h4>Roberto Alves</h4>
+                                    <p>Designer UX/UI</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- DEPOIMENTO 4 -->
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <p>"Adorei as aulas que adquiri aqui, nota 10!"</p>
+                                <div class="testimonial-author">
+                                    <h4>Gabriela Conceição</h4>
+                                    <p>Pacote completo de Desenvolvimento fullstack</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- DEPOIMENTO 5 -->
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <p>"Desde o início gostei do apoio que obtive dos professores e pela mentoria, recomendo
+                                    a todos!"</p>
+                                <div class="testimonial-author">
+                                    <h4>Caio Humberto</h4>
+                                    <p>Eletroeletrônica</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- INDICADORES DO CARROSSEL (BOLINHAS DE NAVEGAÇÃO) -->
+                <div class="carousel-indicators">
+                    <button class="indicator active" aria-label="Slide 1"></button> <!-- Indicador ativo -->
+                    <button class="indicator" aria-label="Slide 2"></button> <!-- Indicador inativo -->
+                    <button class="indicator" aria-label="Slide 3"></button> <!-- Indicador inativo -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE CHAMADA PARA AÇÃO (CALL TO ACTION) -->
+        <section class="cta-section">
+            <div class="cta-container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Pronto para começar sua jornada de aprendizado?</h2>
+                    <!-- Título motivacional -->
+                    <p class="cta-description">Junte-se a milhares de alunos satisfeitos e transforme seu futuro hoje
+                        mesmo!</p> <!-- Descrição motivacional -->
+                    <a class="cta-button" href="/Front-end/Pages/Cadastro.html"> <!-- Botão de ação principal -->
+                        <span>Cadastre-se agora</span> <!-- Texto do botão -->
+                    </a>
+                </div>
+                <div class="cta-decoration"> <!-- Elementos decorativos visuais -->
+                    <div class="cta-shape cta-shape-1"></div> <!-- Forma decorativa 1 -->
+                    <div class="cta-shape cta-shape-2"></div> <!-- Forma decorativa 2 -->
+                    <div class="cta-shape cta-shape-3"></div> <!-- Forma decorativa 3 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE PLANOS E PREÇOS -->
+        <section class="pricing-section">
+            <div class="pricing-container">
+                <h2 class="section-title plan">Escolha o Plano Perfeito para Você</h2> <!-- Título da seção -->
+                <p class="pricing-subtitle">Invista no seu futuro com nossos planos flexíveis e acessíveis</p>
+                <!-- Subtítulo -->
+
+                <div class="pricing-grid"> <!-- Grid de planos de preços -->
+                    <!-- PLANO BÁSICO -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Plano Básico</h3> <!-- Nome do plano -->
+                            <div class="pricing-price">
+                                <span class="price-amount">R$ 49</span> <!-- Preço -->
+                                <span class="price-period">/mês</span> <!-- Periodicidade -->
+                            </div>
+                            <p class="pricing-description">Ideal para quem está começando</p>
+                            <!-- Descrição do plano -->
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <!-- Lista de benefícios do plano -->
+                                <li>
+                                    <div class="icon_verification">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/16/16508.png " alt="ícone">
+                                        <!-- Ícone de verificação -->
+                                    </div>
+                                    Acesso a 5 cursos mensais <!-- Benefício 1 -->
+                                </li>
+                                <li>
+                                    <div class="icon_verification"><img
+                                            src="https://cdn-icons-png.flaticon.com/512/16/16508.png " alt="ícone">
+                                    </div> Certificado digital <!-- Benefício 2 -->
+                                </li>
+                                <li>
+                                    <div class="icon_verification"><img
+                                            src="https://cdn-icons-png.flaticon.com/512/16/16508.png " alt="ícone">
+                                    </div> Suporte por email <!-- Benefício 3 -->
+                                </li>
+                                <li>
+                                    <div class="icon_verification"><img
+                                            src="https://cdn-icons-png.flaticon.com/512/16/16508.png " alt="ícone">
+                                    </div> Acesso por 30 dias <!-- Benefício 4 -->
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="pricing-button" href="Pages/Planos.html">Escolher Plano</a>
+                        <!-- Botão de seleção do plano -->
+                    </div>
+
+                    <!-- PLANO PREMIUM (PLANO EM DESTAQUE) -->
+                    <div class="pricing-card featured">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Plano Premium</h3>
+                            <div class="pricing-price">
+                                <span class="price-amount">R$ 99</span>
+                                <span class="price-period">/mês</span>
+                            </div>
+                            <p class="pricing-description">Perfeito para desenvolvimento contínuo</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li>
+                                    <div class="icon_verification">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/16/16508.png " alt="ícone">
+                                    </div> Acesso ilimitado a todos os cursos
+                                </li>
+                                <li>
+                                    <div class="icon_verification">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/16/16508.png " alt="ícone">
+                                    </div> Certificado digital premium
+                                </li>
+                                <li>
+                                    <div class="icon_verification">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/16/16508.png " alt="ícone">
+                                    </div> Suporte prioritário 24/7
+                                </li>
+                                <li>
+                                    <div class="icon_verification">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/16/16508.png " alt="ícone">
+                                    </div> Conteúdo exclusivo
+                                </li>
+                                <li>
+                                    <div class="icon_verification">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/16/16508.png " alt="ícone">
+                                    </div> 2 mentorias mensais
+                                </li>
+                                <li>
+                                    <div class="icon_verification">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/16/16508.png " alt="ícone">
+                                    </div> Projetos práticos guiados
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="pricing-button primary" href="Pages/Planos.html">Escolher Plano</a>
+                        <!-- Botão com destaque -->
+                    </div>
+
+                    <!-- PLANO EMPRESARIAL -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Plano Empresarial</h3>
+                            <div class="pricing-price">
+                                <span class="price-amount">R$ 199</span>
+                                <span class="price-period">/mês</span>
+                            </div>
+                            <p class="pricing-description">Para empresas e equipes</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li>
+                                    <div class="icon_verification">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/16/16508.png " alt="ícone">
+                                    </div> 5 licenças simultâneas
+                                </li>
+                                <li>
+                                    <div class="icon_verification">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/16/16508.png " alt="ícone">
+                                    </div> Certificados corporativos
+                                </li>
+                                <li>
+                                    <div class="icon_verification">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/16/16508.png " alt="ícone">
+                                    </div> Suporte dedicado
+                                </li>
+                                <li>
+                                    <div class="icon_verification">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/16/16508.png " alt="ícone">
+                                    </div> Conteúdo exclusivo
+                                </li>
+                                <li>
+                                    <div class="icon_verification">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/16/16508.png " alt="ícone">
+                                    </div> Mentorias em grupo
+                                </li>
+                                <li>
+                                    <div class="icon_verification">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/16/16508.png " alt="ícone">
+                                    </div> Relatórios de progresso
+                                </li>
+                                <li>
+                                    <div class="icon_verification">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/16/16508.png " alt="ícone">
+                                    </div> Personalização corporativa
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="pricing-button" href="Pages/Planos.html">Escolher Plano</a>
+                    </div>
+                </div>
+
+                <!-- RODAPÉ DA SEÇÃO DE PREÇOS -->
+                <div class="pricing-footer">
+                    <p>Todos os planos incluem garantia de 7 dias!
+                        <!-- Dúvidas? <a href="#">Fale com nosso time</a> -->
+                        <!-- Informação adicional -->
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE INTELIGÊNCIA ARTIFICIAL -->
+        <section class="ai-section">
+            <div class="ai-container">
+                <div class="ai-content">
+                    <h2 class="ai-title">Aprendar a utilizar a IA para revolucionar seu aprendizado!</h2>
+                    <!-- Título da seção -->
+                    <p class="ai-description">
+                        A inteligência artificial personalizada adapta o conteúdo ao seu ritmo,
+                        oferece exercícios inteligentes e fornece feedback instantâneo para acelerar
+                        sua evolução. <!-- Descrição dos benefícios da IA -->
+                    </p>
+                </div>
+                <div class="ai-image-container">
+                    <img src="https://img.freepik.com/fotos-premium/interface-do-programa-de-fotos-gerada-por-ia_793210-2310.jpg"
+                        alt="Inteligência Artificial para educação" class="ai-image" />
+                    <!-- Imagem ilustrativa de IA -->
+                    <div class="ai-image-overlay"></div> <!-- Overlay para efeito visual -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO "EM ALTA AGORA" (TRENDING SKILLS) -->
+        <section class="trending-skills">
+            <div class="trending-header">
+                <h2 class="trending-main-title">Em alta agora</h2> <!-- Título da seção -->
+                <p class="trending-subtitle">ChatGPT é uma habilidade em alta</p> <!-- Subtítulo com destaque -->
+                <div class="trending-cta">
+                    <a href="#" class="skill-link">Ver cursos de ChatGPT</a> <!-- Link para cursos de ChatGPT -->
+                    <span class="student-count">4.997.191 alunos</span> <!-- Contador de alunos -->
+                </div>
+                <a href="#" class="view-all-skills">Mostrar todas as habilidades em alta →</a>
+                <!-- Link para ver todas as habilidades -->
+            </div>
+
+            <div class="skills-grid"> <!-- Grid de habilidades em alta -->
+                <!-- COLUNA DESENVOLVIMENTO -->
+                <div class="skills-column">
+                    <h3 class="skills-category-title">Desenvolvimento</h3> <!-- Título da categoria -->
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span> <!-- Nome da habilidade -->
+                        <span class="skill-students">49.224.835 alunos</span> <!-- Número de alunos -->
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Desenvolvimento Web</span>
+                        <span class="skill-students">14.285.742 alunos</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Data Science</span>
+                        <span class="skill-students">8.097.712 alunos</span>
+                    </div>
+                </div>
+
+                <!-- COLUNA DESIGN -->
+                <div class="skills-column">
+                    <h3 class="skills-category-title">Design</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Blender</span>
+                        <span class="skill-students">3.035.175 alunos</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Design gráfico</span>
+                        <span class="skill-students">4.611.531 alunos</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Design de experiência do usuário (UX)</span>
+                        <span class="skill-students">2.117.616 alunos</span>
+                    </div>
+                </div>
+
+                <!-- COLUNA NEGÓCIOS -->
+                <div class="skills-column">
+                    <h3 class="skills-category-title">Negócios</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">PMI Project Management Professional (PMP)</span>
+                        <span class="skill-students">2.728.520 alunos</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Microsoft Power BI</span>
+                        <span class="skill-students">4.933.750 alunos</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">PMI Certified Associate in Project Management (CAPM)</span>
+                        <span class="skill-students">454.977 alunos</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-link" style="margin-left: 0;">
+                <span style="margin-left:31px ;">*Dados baseados globalmente.</span>
+            </div>
+        </section>
+    </main>
+    <!-- RODAPÉ DA PÁGINA -->
+    <footer>
+        <div class="footer-main"> <!-- Seção principal do footer -->
+            <div class="footer-container">
+                <!-- LINKS DA EMPRESA -->
+                <div class="footer-links">
+                    <h4>Empresa</h4> <!-- Título do grupo de links -->
+                    <ul>
+                        <li><a href="/Front-end/Pages/Sobre.html">Sobre</a></li> <!-- Link Sobre -->
+                        <li><a href="#">Carreiras</a></li> <!-- Link Carreiras -->
+                        <li><a href="#">Blog</a></li> <!-- Link Blog -->
+                        <li><a href="#">Ajuda e Suporte</a></li> <!-- Link Suporte -->
+                    </ul>
+                </div>
+
+                <!-- LINKS DE CATEGORIAS -->
+                <div class="footer-links">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="#">Desenvolvimento</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Negócios</a></li>
+                    </ul>
+                </div>
+
+                <!-- LINKS DE RECURSOS -->
+                <div class="footer-links">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#">Artigos</a></li>
+                        <li><a href="#">Tutoriais</a></li>
+                        <li><a href="#">Webinars</a></li>
+                        <li><a href="#">Certificados</a></li>
+                    </ul>
+                </div>
+
+                <!-- LINKS DA PLATAFORMA -->
+                <div class="footer-links">
+                    <h4>Plataforma</h4>
+                    <ul>
+                        <li><a href="#">Para Empresas</a></li>
+                        <li><a href="#">Para Universidades</a></li>
+                        <li><a href="#">Para Governo</a></li>
+                        <li><a href="#">Tornar-se Instrutor</a></li>
+                    </ul>
+                </div>
+
+                <!-- NEWSLETTER E REDES SOCIAIS -->
+                <div class="footer-newsletter">
+                    <h4>Informe seu email</h4>
+                    <p>Receba atualizações, novidades e promoções</p> <!-- Texto de incentivo -->
+                    <form class="newsletter-form"> <!-- Formulário de newsletter -->
+                        <input type="email" placeholder="Seu e-mail" required> <!-- Campo de email -->
+                        <button type="submit">Inscrever</button> <!-- Botão de submissão -->
+                    </form>
+                    <div class="social-links"> <!-- Links para redes sociais -->
+                        <a href="#" aria-label="Facebook">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3128/3128304.png" alt="Facebook">
+                            <!-- Ícone Facebook -->
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <img src="https://cdn-icons-png.flaticon.com/512/4922/4922972.png" alt="Instagram">
+                            <!-- Ícone Instagram -->
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968958.png" alt="X_twitter">
+                            <!-- Ícone Twitter/X -->
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <img src="https://cdn-icons-png.flaticon.com/512/160/160205.png" alt="YouTube">
+                            <!-- Ícone YouTube -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RODAPÉ INFERIOR (COPYRIGHT E LINKS LEGAIS) -->
+        <div class="footer-sub">
+            <div class="footer-bottom">
+                <div class="logo">
+                    <img src="https://i.pinimg.com/736x/6e/ad/87/6ead878978850d09e95fd5a1526dc712.jpg"
+                        alt="TeleData Treinamentos"> <!-- Logo no footer -->
+                </div>
+                <div class="copyright">
+                    <p>© 2025 TeleData Treinamentos. Todos os direitos reservados.</p> <!-- Texto de copyright -->
+                </div>
+                <div class="legal-links"> <!-- Links legais -->
+                    <a href="#">Termos de Uso</a> <!-- Link termos de uso -->
+                    <a href="#">Política de Privacidade</a> <!-- Link política de privacidade -->
+                    <a href="#">Cookies</a> <!-- Link políticas de cookies -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

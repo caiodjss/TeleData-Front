@@ -1,0 +1,63 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "Front-end/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/Front-end/Pages/homePage.html"
+    },
+    {
+      "src": "/home",
+      "dest": "/Front-end/Pages/homePage.html"
+    },
+    {
+      "src": "/login",
+      "dest": "/Front-end/Pages/Login.html"
+    },
+    {
+      "src": "/cadastro",
+      "dest": "/Front-end/Pages/Cadastro.html"
+    },
+    {
+      "src": "/catalogo",
+      "dest": "/Front-end/Pages/Catalogo.html"
+    },
+    {
+      "src": "/perfil",
+      "dest": "/Front-end/Pages/PerfilUsuario.html"
+    },
+    {
+      "src": "/planos",
+      "dest": "/Front-end/Pages/Planos.html"
+    },
+    {
+      "src": "/video",
+      "dest": "/Front-end/Pages/TelaVideo.html"
+    },
+    {
+      "src": "/sobre",
+      "dest": "/Front-end/Pages/Sobre.html"
+    },
+    {
+      "src": "/header",
+      "dest": "/Front-end/Pages/menu-header.html"
+    },
+    {
+      "src": "/footer",
+      "dest": "/Front-end/Pages/footer.html"
+    },
+    {
+      "src": "/(.*\\.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot))$",
+      "dest": "/Front-end/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/Front-end/Pages/$1.html"
+    }
+  ]
+}

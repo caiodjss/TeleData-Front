@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeleData Treinamentos - Cadastro</title>
+  <!-- Link para o arquivo CSS da página de cadastro -->
+  <link rel="stylesheet" href="../Styles/Cadastro.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5495/5495002.png" type="image/png"> <!-- Favicon -->
+  <script src="../JavaScript/cadastro.js" defer></script>
+  <script src="../Scripts/cadastro.js" defer></script>
+  <!-- Link para a biblioteca de ícones Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../Styles/menu-header.css">
+
+</head>
+
+<body>
+
+  <!-- ========================= Footer ========================== -->
+  <script src="/Front-end/JavaScript/loadFooter.js"></script>
+  <!-- Menu Superior -->
+  <header>
+    <div class="header-container"> <!-- Container principal do header -->
+      <!-- LOGOTIPO -->
+      <div class="logo">
+        <a href="./homePage.html">
+          <img src="https://i.pinimg.com/736x/6e/ad/87/6ead878978850d09e95fd5a1526dc712.jpg"
+            alt="TeleData Treinamentos"> <!-- Logo da empresa -->
+        </a>
+      </div>
+
+      <!-- BARRA DE PESQUISA -->
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar cursos..."> <!-- Campo de input para pesquisa -->
+        <div class="search-button"> <!-- Botão de pesquisa -->
+          <img src="https://cdn-icons-png.flaticon.com/512/2319/2319177.png" alt="search-button">
+          <!-- Ícone de lupa -->
+        </div>
+      </div>
+
+      <!-- MENU DE NAVEGAÇÃO E AÇÕES DO USUÁRIO -->
+      <div class="nav-actions">
+        <a href="#" class="nav-link">Categorias</a> <!-- Link para categorias -->
+        <a href="#" class="nav-link">Docente</a> <!-- Link para área do docente -->
+        <a href="/Front-end/Pages/Login.html">
+          <button class="nav-button">Entrar</button> <!-- Botão de login -->
+        </a>
+        <a href="/Front-end/Pages/Cadastro.html">
+          <button class="nav-button primary">Cadastrar</button> <!-- Botão de cadastro (destaque) -->
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================= CONTEÚDO PRINCIPAL ========================== -->
+  <main class="container">
+
+    <!-- Seção de imagem/ilustração -->
+    <section class="login-bg">
+      <img
+        src="https://img.freepik.com/vetores-premium/code-that-connects-modern-illustrations-eps-10-file-on-transparent-background_848977-6365.jpg"
+        alt="Ilustração Cadastro">
+    </section>
+
+    <!-- Seção de cadastro -->
+    <section class="login-box">
+      <div class="login-header">
+        <h2>Cadastre-se</h2>
+        <div class="decoration-line"></div>
+      </div>
+
+      <!-- Formulário de cadastro -->
+      <form action="/registeruser" method="POST">
+        <div class="input-group">
+          <i class="fa fa-user"></i>
+          <input name="username" type="text" placeholder="Nome completo" required>
+        </div>
+
+        <div class="input-group">
+          <i class="fa fa-envelope"></i>
+          <input name="useremail" type="email" placeholder="Email" required>
+        </div>
+
+        <div class="input-group">
+          <i class="fa fa-lock"></i>
+          <input name="userpassword" type="password" placeholder="Senha (mínimo 8 caracteres)" required>
+        </div>
+
+        <!-- Campo para confirmar a senha -->
+        <div class="input-group">
+          <i class="fa fa-lock"></i>
+          <input type="password" placeholder="Confirmar Senha" required>
+        </div>
+
+        <!-- Botão para enviar o formulário -->
+        <button type="submit" class="btn-entrar">
+          <span class="btn-text">Cadastrar</span>
+        </button>
+      </form>
+
+      <!-- Link para voltar à tela de login -->
+      <nav class="login-links">
+        <div>
+          <a href="/loginpage">Já tenho cadastro: Fazer Login</a>
+        </div>
+      </nav>
+
+      <!-- Opção para receber promoções -->
+      <div class="newsletter">
+        <label class="checkbox-container">
+          <input type="checkbox" id="newsletter">
+          <span class="checkmark"></span>
+          Quero receber informações e promoções por email
+        </label>
+      </div>
+
+      <!-- Separador -->
+      <div class="separator">
+        <span>ou</span>
+      </div>
+
+      <!-- Login via redes sociais -->
+      <aside class="social-login">
+        <p>Ou cadastre-se com:</p>
+        <div class="social-buttons">
+          <button class="social-btn google-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png " alt="Google">
+          </button>
+          <button class="social-btn apple-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/84/84595.png " alt="Apple">
+          </button>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel do Estudante</title>
+  <link rel="stylesheet" href="../Styles/PerfilUsuario.css" />
+</head>
+
+<body>
+  <!-- ========================= Menu Header ========================== -->
+  <script src="/Front-end/JavaScript/loadHeader.js"></script>
+  <!-- ========================= Footer ========================== -->
+  <script src="/Front-end/JavaScript/loadFooter.js"></script>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="avatar">U</div>
+        <h3>USUÁRIO</h3>
+        <p>Estudante</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#" id="informacoes" onclick="mostrarConteudo(event)" class="active">Minhas Informações</a></li>
+          <li><a href="#" id="cursos" onclick="mostrarConteudo(event)">Visualizar Cursos</a></li>
+          <li><a href="#" id="seguranca" onclick="mostrarConteudo(event)">Segurança da conta</a></li>
+          <li><a href="#" id="foto" onclick="mostrarConteudo(event)">Foto</a></li>
+        </ul>
+      </nav>
+      <button class="delete-btn" onclick="emBreve()">Excluir Conta</button>
+    </aside>
+
+    <!-- ÁREA ONDE O CONTEÚDO SERÁ CARREGADO DINAMICAMENTE -->
+    <main class="main-content">
+      <div id="saida" class="conteudo-dinamico">
+        <!-- Conteúdo padrão - Página de Cursos -->
+        <div class="courses-page">
+          <div class="courses-header">
+            <h1>Cursos Disponíveis</h1>
+            <p class="subtitle">Aprenda com os melhores instrutores</p>
+          </div>
+
+          <!-- Carrossel de Cursos em Destaque -->
+          <div class="featured-courses">
+            <div class="section-header">
+              <h2>Cursos em Destaque</h2>
+              <a href="#" class="view-all">Ver todos</a>
+            </div>
+
+            <div class="courses-carousel-container">
+              <button class="course-arrow course-arrow-left">
+                <svg viewBox="0 0 24 24">
+                  <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                </svg>
+              </button>
+
+              <div class="carousel-viewport">
+                <div class="courses-carousel">
+                  <!-- Card 1 -->
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop"
+                        alt="N8N Para Iniciantes">
+                      <div class="course-badge">Mais Vendido!</div>
+                    </div>
+                    <div class="course-content">
+                      <h3 class="course-title">Curso Completo de Desenvolvimento Web</h3>
+                      <p class="course-instructor">Instrutor(a): João Silva</p>
+                      <div class="course-rating">
+                        <div class="rating-stars">★★★★★</div>
+                        <div class="rating-details">
+                          <span class="rating-value">4.8</span>
+                          <span class="rating-count">(4,934 avaliações)</span>
+                        </div>
+                      </div>
+                      <div class="course-progress">
+                        <div class="course-progress-bar" style="width: 75%"></div>
+                      </div>
+                      <div class="course-price-container">
+                        <p class="course-price">R$ 199,90</p>
+                        <button class="play-button">▶</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=200&fit=crop"
+                        alt="APIs Avançadas">
+                      <div class="course-badge">Novo!</div>
+                    </div>
+                    <div class="course-content">
+                      <h3 class="course-title">APIs Avançadas</h3>
+                      <p class="course-instructor">Instrutor(a): Pedro Almeida</p>
+                      <div class="course-rating">
+                        <div class="rating-stars">★★★★★</div>
+                        <div class="rating-details">
+                          <span class="rating-value">4.9</span>
+                          <span class="rating-count">(2,105 avaliações)</span>
+                        </div>
+                      </div>
+                      <div class="course-progress">
+                        <div class="course-progress-bar" style="width: 45%"></div>
+                      </div>
+                      <div class="course-price-container">
+                        <p class="course-price">R$ 249,90</p>
+                        <button class="play-button">▶</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&h=200&fit=crop"
+                        alt="Web Development">
+                      <div class="course-badge">Popular!</div>
+                    </div>
+                    <div class="course-content">
+                      <h3 class="course-title">Web Development</h3>
+                      <p class="course-instructor">Instrutor(a): Maria Santos</p>
+                      <div class="course-rating">
+                        <div class="rating-stars">★★★★☆</div>
+                        <div class="rating-details">
+                          <span class="rating-value">4.5</span>
+                          <span class="rating-count">(987 avaliações)</span>
+                        </div>
+                      </div>
+                      <div class="course-progress">
+                        <div class="course-progress-bar" style="width: 25%"></div>
+                      </div>
+                      <div class="course-price-container">
+                        <p class="course-price">R$ 179,90</p>
+                        <button class="play-button">▶</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 4 -->
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop"
+                        alt="Data Science">
+                      <div class="course-badge">Em Alta!</div>
+                    </div>
+                    <div class="course-content">
+                      <h3 class="course-title">Data Science Fundamentals</h3>
+                      <p class="course-instructor">Instrutor(a): Dr. Carlos Silva</p>
+                      <div class="course-rating">
+                        <div class="rating-stars">★★★★★</div>
+                        <div class="rating-details">
+                          <span class="rating-value">4.8</span>
+                          <span class="rating-count">(2.3k avaliações)</span>
+                        </div>
+                      </div>
+                      <div class="course-progress">
+                        <div class="course-progress-bar" style="width: 60%"></div>
+                      </div>
+                      <div class="course-price-container">
+                        <p class="course-price">R$ 299,90</p>
+                        <button class="play-button">▶</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 5 -->
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=200&fit=crop"
+                        alt="Machine Learning">
+                      <div class="course-badge">Novo!</div>
+                    </div>
+                    <div class="course-content">
+                      <h3 class="course-title">Machine Learning Básico</h3>
+                      <p class="course-instructor">Instrutor(a): Prof. Ana Santos</p>
+                      <div class="course-rating">
+                        <div class="rating-stars">★★★★☆</div>
+                        <div class="rating-details">
+                          <span class="rating-value">4.6</span>
+                          <span class="rating-count">(1.8k avaliações)</span>
+                        </div>
+                      </div>
+                      <div class="course-progress">
+                        <div class="course-progress-bar" style="width: 30%"></div>
+                      </div>
+                      <div class="course-price-container">
+                        <p class="course-price">R$ 349,90</p>
+                        <button class="play-button">▶</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="course-arrow course-arrow-right">
+                <svg viewBox="0 0 24 24">
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                </svg>
+              </button>
+
+              <div class="carousel-indicators">
+                <span class="carousel-indicator active"></span>
+                <span class="carousel-indicator"></span>
+                <span class="carousel-indicator"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carrossel de Cursos Recomendados -->
+          <div class="recommended-courses">
+            <div class="section-header">
+              <h2>Recomendados para Você</h2>
+              <a href="#" class="view-all">Ver todos</a>
+            </div>
+
+            <div class="courses-carousel-container">
+              <button class="course-arrow course-arrow-left">
+                <svg viewBox="0 0 24 24">
+                  <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                </svg>
+              </button>
+
+              <div class="carousel-viewport">
+                <div class="courses-carousel">
+                  <!-- Card 1 -->
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&h=200&fit=crop"
+                        alt="Full Stack Development">
+                      <div class="course-badge">Popular!</div>
+                    </div>
+                    <div class="course-content">
+                      <h3 class="course-title">Full Stack Development</h3>
+                      <p class="course-instructor">Instrutor(a): Roberto Lima</p>
+                      <div class="course-rating">
+                        <div class="rating-stars">★★★★★</div>
+                        <div class="rating-details">
+                          <span class="rating-value">4.9</span>
+                          <span class="rating-count">(3.2k avaliações)</span>
+                        </div>
+                      </div>
+                      <div class="course-progress">
+                        <div class="course-progress-bar" style="width: 20%"></div>
+                      </div>
+                      <div class="course-price-container">
+                        <p class="course-price">R$ 399,90</p>
+                        <button class="play-button">▶</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop"
+                        alt="React Avançado">
+                      <div class="course-badge">Mais Vendido!</div>
+                    </div>
+                    <div class="course-content">
+                      <h3 class="course-title">React Avançado</h3>
+                      <p class="course-instructor">Instrutor(a): Carla Oliveira</p>
+                      <div class="course-rating">
+                        <div class="rating-stars">★★★★★</div>
+                        <div class="rating-details">
+                          <span class="rating-value">4.7</span>
+                          <span class="rating-count">(1.5k avaliações)</span>
+                        </div>
+                      </div>
+                      <div class="course-progress">
+                        <div class="course-progress-bar" style="width: 50%"></div>
+                      </div>
+                      <div class="course-price-container">
+                        <p class="course-price">R$ 229,90</p>
+                        <button class="play-button">▶</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=200&fit=crop"
+                        alt="Node.js Completo">
+                      <div class="course-badge">Novo!</div>
+                    </div>
+                    <div class="course-content">
+                      <h3 class="course-title">Node.js Completo</h3>
+                      <p class="course-instructor">Instrutor(a): Marcos Silva</p>
+                      <div class="course-rating">
+                        <div class="rating-stars">★★★★☆</div>
+                        <div class="rating-details">
+                          <span class="rating-value">4.4</span>
+                          <span class="rating-count">(890 avaliações)</span>
+                        </div>
+                      </div>
+                      <div class="course-progress">
+                        <div class="course-progress-bar" style="width: 40%"></div>
+                      </div>
+                      <div class="course-price-container">
+                        <p class="course-price">R$ 279,90</p>
+                        <button class="play-button">▶</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 4 -->
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop"
+                        alt="Python para Data Science">
+                      <div class="course-badge">Em Alta!</div>
+                    </div>
+                    <div class="course-content">
+                      <h3 class="course-title">Python para Data Science</h3>
+                      <p class="course-instructor">Instrutor(a): Dr. Paulo Costa</p>
+                      <div class="course-rating">
+                        <div class="rating-stars">★★★★★</div>
+                        <div class="rating-details">
+                          <span class="rating-value">4.8</span>
+                          <span class="rating-count">(2.1k avaliações)</span>
+                        </div>
+                      </div>
+                      <div class="course-progress">
+                        <div class="course-progress-bar" style="width: 35%"></div>
+                      </div>
+                      <div class="course-price-container">
+                        <p class="course-price">R$ 319,90</p>
+                        <button class="play-button">▶</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="course-arrow course-arrow-right">
+                <svg viewBox="0 0 24 24">
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                </svg>
+              </button>
+
+              <div class="carousel-indicators">
+                <span class="carousel-indicator active"></span>
+                <span class="carousel-indicator"></span>
+                <span class="carousel-indicator"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grade de Cards (mantida como backup/alternativa) -->
+          <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="card">
+              <h2 class="card-title">NBN Para Iniciantes</h2>
+              <p class="instructor">Instrutor(a): João Silva</p>
+              <div class="rating">
+                <div class="stars">★★★★★</div>
+                <div class="reviews">4.8 (43 avaliações)</div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+              <h2 class="card-title">NBN Para Iniciantes</h2>
+              <p class="instructor">Instrutor(a): João Silva</p>
+              <div class="rating">
+                <div class="stars">★★★★★</div>
+                <div class="reviews">4.8 (43 avaliações)</div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+              <h2 class="card-title">Automação com NBN</h2>
+              <p class="instructor">Instrutor(a): Pedro Almeida</p>
+              <div class="rating">
+                <div class="stars">★★★★★</div>
+                <div class="reviews">4.9 (2,105 avaliações)</div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+              <h2 class="card-title">APIs e Integrações</h2>
+              <p class="instructor">Instrutor(a): Maria Santos</p>
+              <div class="rating">
+                <div class="stars">★★★★★</div>
+                <div class="reviews">4.5 (987 avaliações)</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="categories-section">
+            <h2 class="categories-title">Categorias</h2>
+            <table class="categories-table">
+              <tr>
+                <th>Desenvolvimento</th>
+                <th>Artigos</th>
+                <th>Para Empresas</th>
+              </tr>
+              <tr>
+                <td>Design</td>
+                <td>Tutoriais</td>
+                <td>Para Universidades</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="/Front-end/JavaScript/perfil-usuario.js"></script>
+
+</body>
+
+</html>

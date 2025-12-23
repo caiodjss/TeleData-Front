@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evolui Treinamentos - Curso de n8n</title>
+  <link rel="stylesheet" href="/Front-end/Styles/TelaVideo.css">
+  <script src="/Front-end/JavaScript/TelaVideo.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- ======================= TOPBAR ======================= -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <a class="logo" href="/Front-end/Pages/homePage.html">
+        <img src=" https://i.pinimg.com/736x/6e/ad/87/6ead878978850d09e95fd5a1526dc712.jpg"
+          alt="Logo da Evolui Treinamentos" />
+      </a>
+
+      <div class="course-title">
+        Curso de n8n: Automação de Processos e Integração de Aplicativos
+      </div>
+    </div>
+
+    <div class="topbar-right">
+      <!-- <button class="rating-btn">Deixe uma classificação</button> -->
+      <div class="progress-btn">
+        <a href="/Front-end/Pages/PerfilUsuario.html">
+          <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Avatar do aluno" class="avatar-top" />
+        </a>
+        <!-- <span>Seu progresso</span> -->
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================= CONTEÚDO PRINCIPAL ======================= -->
+  <div class="main-container">
+
+    <!-- TOPO (VÍDEO + SIDEBAR) -->
+    <div class="content-top">
+
+      <!-- VÍDEO COM CONTROLES NATIVOS -->
+      <section class="video-section">
+        <div class="video-container">
+          <video id="main-video" controls
+            poster="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1280&h=720&fit=crop">
+            <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+          </video>
+        </div>
+      </section>
+
+      <!-- SIDEBAR ATUALIZADA COM VÍDEOS RELACIONADOS -->
+      <aside class="sidebar">
+        <div class="user-profile">
+          <!-- conteúdo do perfil -->
+        </div>
+
+        <h3>Conteúdo do curso</h3>
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+          </div>
+          <span id="progress-text">0% concluído</span>
+        </div>
+
+        <ul class="lesson-list">
+          <li class="section">Seção 1: Introdução</li>
+          <li class="lesson active"
+            data-video="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+            data-poster="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=225&fit=crop">
+            1. Bem-vindo ao curso
+          </li>
+          <li class="lesson" data-video="https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+            data-poster="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=225&fit=crop">
+            2. O que é o n8n
+          </li>
+
+          <li class="section">Seção 2: Integrações em Nuvem</li>
+          <li class="lesson" data-video="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+            data-poster="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=225&fit=crop">
+            3. Instalação Cloud
+          </li>
+          <li class="lesson" data-video="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+            data-poster="https://images.unsplash.com/photo-1526379879527-8559ecfcaec0?w=400&h=225&fit=crop">
+            4. Primeiros passos
+          </li>
+
+          <li class="section">Seção 3: Self-Hosted</li>
+          <li class="lesson" data-video="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+            data-poster="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=225&fit=crop">
+            5. Instalação no servidor
+          </li>
+        </ul>
+      </aside>
+    </div>
+
+    <!-- ======================= ABA INFERIOR ======================= -->
+    <section class="course-info">
+
+      <!-- Abas -->
+      <div class="tabs">
+        <button class="tab-btn active" data-target="visao">Visão geral</button>
+        <button class="tab-btn" data-target="avaliacoes">Avaliações</button>
+        <button class="tab-btn" data-target="arquivos">Arquivos</button>
+      </div>
+
+      <!-- ================= VISÃO GERAL ================= -->
+      <div id="visao" class="tab-content active">
+        <div class="overview-content">
+          <h2>Aprenda os conceitos básicos do melhor iPaaS gratuito da atualidade.</h2>
+          <p class="course-description">Integre qualquer app, automatize qualquer processo com n8n - a ferramenta de
+            automação de workflow de código aberto.</p>
+
+          <div class="course-stats">
+            <div class="stat-item">
+              <span class="stat-value">4.7</span>
+              <span class="stat-label">Avaliação</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">3.5h</span>
+              <span class="stat-label">Duração</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">5</span>
+              <span class="stat-label">Módulos</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">Ago/2024</span>
+              <span class="stat-label">Atualizado</span>
+            </div>
+          </div>
+
+          <div class="learning-objectives">
+            <h4>O que você vai aprender</h4>
+            <ul>
+              <li>Compreender os fundamentos do n8n e automação de workflows</li>
+              <li>Configurar e implantar n8n na nuvem e localmente</li>
+              <li>Criar automações complexas integrando múltiplas aplicações</li>
+              <li>Gerenciar e monitorar seus workflows automatizados</li>
+              <li>Implementar boas práticas de segurança e performance</li>
+              <li>Troubleshooting e otimização de workflows</li>
+            </ul>
+          </div>
+
+          <div class="learning-objectives">
+            <h4>Para quem é este curso</h4>
+            <ul>
+              <li>Desenvolvedores que querem automatizar processos</li>
+              <li>Analistas de dados que precisam integrar fontes diversas</li>
+              <li>Empreendedores buscando otimizar operações</li>
+              <li>Profissionais de TI interessados em ferramentas low-code</li>
+              <li>Estudantes de tecnologia e automação</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= AVALIAÇÕES ================= -->
+      <div id="avaliacoes" class="tab-content">
+        <div class="reviews-content">
+          <div class="reviews-header">
+            <div class="rating-summary">
+              <div class="average-rating">4.7</div>
+              <div>
+                <div class="rating-stars">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">☆</span>
+                </div>
+                <div class="rating-count">Avaliação do curso</div>
+                <div class="rating-count">1.247 avaliações</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-bar">
+            <input type="text" placeholder="Pesquisar avaliações...">
+            <select>
+              <option value="">Todas as classificações</option>
+              <option value="5">5 estrelas</option>
+              <option value="4">4 estrelas</option>
+              <option value="3">3 estrelas</option>
+              <option value="2">2 estrelas</option>
+              <option value="1">1 estrela</option>
+            </select>
+          </div>
+
+          <div class="review-item">
+            <div class="review-header">
+              <div class="reviewer-info">
+                <div class="reviewer-avatar">CR</div>
+                <div>
+                  <div class="reviewer-name">Carlos R.</div>
+                  <div class="rating-stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                  </div>
+                </div>
+              </div>
+              <div class="review-date">há 2 semanas</div>
+            </div>
+            <div class="review-content">
+              Excelente curso! As explicações sobre n8n são muito claras e os exemplos práticos ajudaram bastante a
+              entender como aplicar na minha empresa.
+            </div>
+            <div class="review-actions">
+              <button>Útil</button>
+              <button>Reportar</button>
+            </div>
+          </div>
+
+          <div class="review-item">
+            <div class="review-header">
+              <div class="reviewer-info">
+                <div class="reviewer-avatar">AP</div>
+                <div>
+                  <div class="reviewer-name">Amanda P.</div>
+                  <div class="rating-stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">☆</span>
+                  </div>
+                </div>
+              </div>
+              <div class="review-date">há 1 mês</div>
+            </div>
+            <div class="review-content">
+              Conteúdo muito bem estruturado. Gostei especialmente da parte de instalação self-hosted, que era
+              exatamente o que eu precisava.
+            </div>
+            <div class="review-actions">
+              <button>Útil</button>
+              <button>Reportar</button>
+            </div>
+          </div>
+
+          <div class="review-item">
+            <div class="review-header">
+              <div class="reviewer-info">
+                <div class="reviewer-avatar">RS</div>
+                <div>
+                  <div class="reviewer-name">Ricardo S.</div>
+                  <div class="rating-stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                  </div>
+                </div>
+              </div>
+              <div class="review-date">há 3 dias</div>
+            </div>
+            <div class="review-content">
+              Finalmente um curso completo sobre n8n em português! O instrutor domina o assunto e explica de forma
+              didática. Recomendo!
+            </div>
+            <div class="review-actions">
+              <button>Útil</button>
+              <button>Reportar</button>
+            </div>
+          </div>
+
+          <div class="more-reviews">
+            <button>Ver mais avaliações</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= ARQUIVOS ================= -->
+      <div id="arquivos" class="tab-content">
+        <div class="files-content">
+          <div class="file-item">
+            <div class="file-icon"><i class="fa-solid fa-file-invoice"></i></div>
+            <div class="file-info">
+              <div class="file-name">Guia Completo - Introdução ao n8n</div>
+              <div class="file-details">
+                <span>PDF</span>
+                <span>3.2 MB</span>
+              </div>
+            </div>
+            <button class="file-download">Baixar</button>
+          </div>
+
+          <div class="file-item">
+            <div class="file-icon"><i class="fa-solid fa-code"></i></div>
+            <div class="file-info">
+              <div class="file-name">Scripts de Instalação - Cloud & Self-Hosted</div>
+              <div class="file-details">
+                <span>ZIP</span>
+                <span>8.5 MB</span>
+              </div>
+            </div>
+            <button class="file-download">Baixar</button>
+          </div>
+
+          <div class="file-item">
+            <div class="file-icon"><i class="fa-solid fa-file"></i></div>
+            <div class="file-info">
+              <div class="file-name">Workflows de Exemplo - Práticas Recomendadas</div>
+              <div class="file-details">
+                <span>JSON</span>
+                <span>1.7 MB</span>
+              </div>
+            </div>
+            <button class="file-download">Baixar</button>
+          </div>
+
+          <div class="file-item">
+            <div class="file-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+            <div class="file-info">
+              <div class="file-name">Checklist de Segurança e Boas Práticas</div>
+              <div class="file-details">
+                <span>PDF</span>
+                <span>2.1 MB</span>
+              </div>
+            </div>
+            <button class="file-download">Baixar</button>
+          </div>
+
+          <div class="file-item">
+            <div class="file-icon"><i class="fa-solid fa-dumbbell"></i></div>
+            <div class="file-info">
+              <div class="file-name">Exercícios Práticos - Casos Reais</div>
+              <div class="file-details">
+                <span>PDF</span>
+                <span>4.3 MB</span>
+              </div>
+            </div>
+            <button class="file-download">Baixar</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+</body>
+
+</html>

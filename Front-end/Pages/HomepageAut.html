@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- METADADOS DA PÁGINA -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura viewport para responsividade -->
+    <title>TeleData Treinamentos</title> <!-- Título da página na aba do navegador -->
+    <!-- LINKS PARA RECURSOS EXTERNOS -->
+    <link rel="stylesheet" href="/Front-end/Styles/footer.css">
+    <link rel="stylesheet" href="/Front-end/Styles/menu-header.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5495/5495002.png" type="image/png"> <!-- Favicon -->
+    <link rel="stylesheet" href="/Front-end/Styles/HomepageAut.css"> <!-- Arquivo CSS principal -->
+    <script src="/Front-end/JavaScript/HomepageAut.js"></script> <!-- Arquivo JavaScript principal -->
+</head>
+
+<body>
+    <!-- CABEÇALHO DA PÁGINA -->
+    <header>
+        <div class="header-container"> <!-- Container principal do header -->
+            <!-- LOGOTIPO -->
+            <div class="logo">
+                <a href="homePage.html">
+                    <img src="https://i.pinimg.com/736x/6e/ad/87/6ead878978850d09e95fd5a1526dc712.jpg"
+                        alt="TeleData Treinamentos"> <!-- Logo da empresa -->
+                </a>
+            </div>
+
+            <!-- BARRA DE PESQUISA -->
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar cursos..."> <!-- Campo de input para pesquisa -->
+                <div class="search-button"> <!-- Botão de pesquisa -->
+                    <img src="https://cdn-icons-png.flaticon.com/512/2319/2319177.png" alt="search-button">
+                    <!-- Ícone de lupa -->
+                </div>
+            </div>
+
+            <!-- MENU DE NAVEGAÇÃO E AÇÕES DO USUÁRIO -->
+            <div class="nav-actions">
+                <a href="/Front-end/Pages/Catalogo.html" class="nav-link">Categorias</a> <!-- Link para categorias -->
+                <a href="/Front-end/Pages/Planos.html" class="nav-link">Acessar Planos</a>
+                <a class="identify" href="/Front-end/Pages/PerfilUsuario.html">
+                    <div class="hello"> Olá, </div><span id="welcome-name">Carregando...</span>
+                    <div class="user-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3237/3237472.png" alt="Perfil">
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!-- CONTEÚDO PRINCIPAL DA PÁGINA -->
+    <main class="main-container">
+        <!-- SEÇÃO HERO BANNER (PRIMEIRA SEÇÃO VISÍVEL) -->
+        <section class="hero-banner">
+            <div class="hero-content">
+                <h1>Bem-vindo de volta, <span id="user-first-name">Aluno</span>!</h1>
+                <p class="hero-subtitle">Domine novas habilidades, acelere sua carreira e transforme seu futuro aqui!
+                </p>
+                <!-- Você tem <strong id="courses-in-progress">3 cursos</strong> em andamento.</p> -->
+                <a class="btn-explore" href="#">
+                    Continuar Aprendendo
+                </a>
+            </div>
+            <div class="hero-illustration">
+                <img src="https://img.freepik.com/free-vector/student-studying-concept-illustration_114360-8500.jpg"
+                    alt="Conceito de estudante">
+            </div>
+        </section>
+
+        <!-- SEÇÃO CONTINUAR APRENDENDO -->
+        <section class="continue-learning">
+            <h2 class="section-title">Continue de onde parou</h2>
+
+            <div class="progress-courses-grid">
+
+                <!-- CARD 1 - MARKETING DIGITAL -->
+                <div class="progress-card">
+                    <div class="progress-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500"
+                            alt="Marketing Digital">
+                        <div class="progress-overlay">
+                            <span class="progress-percentage">80%</span>
+                        </div>
+                    </div>
+                    <div class="progress-content">
+                        <h3 class="progress-title">Marketing Digital Completo</h3>
+                        <p class="progress-text">8 de 10 aulas concluídas</p>
+                        <button class="continue-btn">Continuar Assistindo</button>
+                    </div>
+                </div>
+
+                <!-- CARD 2 - UI/UX DESIGN -->
+                <div class="progress-card">
+                    <div class="progress-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500" alt="UI/UX Design">
+                        <div class="progress-overlay">
+                            <span class="progress-percentage">50%</span>
+                        </div>
+                    </div>
+                    <div class="progress-content">
+                        <h3 class="progress-title">UI/UX Design: Do Básico ao Avançado</h3>
+                        <p class="progress-text">5 de 10 aulas concluídas</p>
+                        <button class="continue-btn">Continuar Assistindo</button>
+                    </div>
+                </div>
+
+                <!-- CARD 3 - PYTHON PARA DATA SCIENCE -->
+                <div class="progress-card">
+                    <div class="progress-image">
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=500"
+                            alt="Python para Data Science">
+                        <div class="progress-overlay">
+                            <span class="progress-percentage">70%</span>
+                        </div>
+                    </div>
+                    <div class="progress-content">
+                        <h3 class="progress-title">Python para Data Science e Machine Learning</h3>
+                        <p class="progress-text">14 de 20 aulas concluídas</p>
+                        <button class="continue-btn">Continuar Assistindo</button>
+                    </div>
+                </div>
+
+                <!-- CARD 4 - ELETROELETRÔNICA -->
+                <div class="progress-card">
+                    <div class="progress-image">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
+                            alt="Eletroeletrônica">
+                        <div class="progress-overlay">
+                            <span class="progress-percentage">90%</span>
+                        </div>
+                    </div>
+                    <div class="progress-content">
+                        <h3 class="progress-title">Eletroeletrônica Básica e Avançada</h3>
+                        <p class="progress-text">18 de 20 aulas concluídas</p>
+                        <button class="continue-btn">Continuar Assistindo</button>
+                    </div>
+                </div>
+
+                <!-- CARD 5 - FOTOGRAFIA DIGITAL -->
+                <div class="progress-card">
+                    <div class="progress-image">
+                        <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=500"
+                            alt="Fotografia Digital">
+                        <div class="progress-overlay">
+                            <span class="progress-percentage">40%</span>
+                        </div>
+                    </div>
+                    <div class="progress-content">
+                        <h3 class="progress-title">Fotografia Digital: Do Básico ao Profissional</h3>
+                        <p class="progress-text">4 de 10 aulas concluídas</p>
+                        <button class="continue-btn">Continuar Assistindo</button>
+                    </div>
+                </div>
+
+        </section>
+
+        <!-- SEÇÃO DE CURSOS EM DESTAQUE COM CARROSSEL -->
+        <section class="featured-courses">
+            <h2 class="section-title">Recomendados para você</h2>
+
+            <!-- BOTÕES DE NAVEGAÇÃO DO CARROSSEL DE CURSOS -->
+            <button class="course-arrow course-arrow-left" aria-label="Cursos anteriores">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" /> <!-- Ícone seta esquerda -->
+                </svg>
+            </button>
+            <button class="course-arrow course-arrow-right" aria-label="Próximos cursos">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" /> <!-- Ícone seta direita -->
+                </svg>
+            </button>
+
+            <!-- CONTAINER DO CARROSSEL DE CURSOS -->
+            <div class="courses-carousel-container">
+                <div class="courses-carousel"> <!-- Carrossel de cursos -->
+
+                    <!-- CARTÃO DE CURSO - DESENVOLVIMENTO WEB -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://i.pinimg.com/736x/d6/19/a6/d619a64645bf2cbf8f32f9063cf29ac5.jpg"
+                                alt="Desenvolvimento Web"> <!-- Imagem do curso -->
+                            <div class="course-badge">Mais Vendido!</div> <!-- Badge de destaque -->
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Curso Completo de Desenvolvimento Web</h3> <!-- Título do curso -->
+                            <p class="course-instructor">Instrutor(a): João Silva</p> <!-- Nome do instrutor -->
+                            <div class="course-rating"> <!-- Avaliação e estrelas -->
+                                <div class="rating-stars">★★★★★</div> <!-- Estrelas de avaliação -->
+                                <div class="rating-details">
+                                    <span class="rating-value">4.8</span> <!-- Valor numérico da avaliação -->
+                                    <span class="rating-count">(4,934 avaliações)</span>
+                                    <!-- Quantidade de avaliações -->
+                                </div>
+                            </div>
+                            <div class="course-price-container"> <!-- Preço e botão de compra -->
+                                <p class="course-price">R$ 199,90</p> <!-- Preço do curso -->
+                                <button class="add-to-cart" aria-label="Adicionar ao carrinho"> <!-- Botão de compra -->
+                                    <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                        alt="Carrinho de compras"> <!-- Ícone do carrinho -->
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARTÃO DE CURSO - MARKETING DIGITAL -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://i.pinimg.com/736x/d9/2b/0e/d92b0e03ceff2632cd016e40473b5a03.jpg"
+                                alt="Marketing Digital">
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Marketing Digital</h3>
+                            <p class="course-instructor">Instrutor(a): Maria Santos</p>
+                            <div class="course-rating">
+                                <div class="rating-stars">★★★★☆</div>
+                                <div class="rating-details">
+                                    <span class="rating-value">4.5</span>
+                                    <span class="rating-count">(987 avaliações)</span>
+                                </div>
+                            </div>
+                            <div class="course-price-container">
+                                <p class="course-price">R$ 79,90</p>
+                                <button class="add-to-cart" aria-label="Adicionar ao carrinho">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                        alt="Carrinho de compras">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARTÃO DE CURSO - UI/UX DESIGN -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://i.pinimg.com/736x/50/c3/1a/50c31ababcbbd1a5c041c08914c564d9.jpg"
+                                alt="UI/UX Design">
+                            <div class="course-badge">Novo!</div> <!-- Badge de novo curso -->
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">UI/UX Design: Do Básico ao Avançado</h3>
+                            <p class="course-instructor">Instrutor(a): Pedro Almeida</p>
+                            <div class="course-rating">
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="rating-details">
+                                    <span class="rating-value">4.9</span>
+                                    <span class="rating-count">(2,105 avaliações)</span>
+                                </div>
+                            </div>
+                            <div class="course-price-container">
+                                <p class="course-price">R$ 249,90</p>
+                                <button class="add-to-cart" aria-label="Adicionar ao carrinho">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                        alt="Carrinho de compras">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARTÃO DE CURSO - PACOTE OFFICE -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://i.pinimg.com/736x/4d/68/ad/4d68adb13a01c58fda32b72e7ee37562.jpg"
+                                alt="Pacote Office e Windows">
+                            <div class="course-badge">Popular!</div> <!-- Badge de curso popular -->
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Pacote Office e Windows</h3>
+                            <p class="course-instructor">Instrutor(a): Mônica Alves</p>
+                            <div class="course-rating">
+                                <div class="rating-stars">★★★★☆</div>
+                                <div class="rating-details">
+                                    <span class="rating-value">4.8</span>
+                                    <span class="rating-count">(2,105 avaliações)</span>
+                                </div>
+                            </div>
+                            <div class="course-price-container">
+                                <p class="course-price">R$ 89,90</p>
+                                <button class="add-to-cart" aria-label="Adicionar ao carrinho">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                        alt="Carrinho de compras">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARTÃO DE CURSO - VIRTUALIZAÇÃO -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://i.pinimg.com/736x/06/76/0d/06760d785da894ca4af9045406f254c8.jpg"
+                                alt="Virtualização">
+                            <div class="course-badge">Promoção!</div> <!-- Badge de promoção -->
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Virtualização</h3>
+                            <p class="course-instructor">Instrutor(a): Caylanne Silva</p>
+                            <div class="course-rating">
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="rating-details">
+                                    <span class="rating-value">4.9</span>
+                                    <span class="rating-count">(1,012 avaliações)</span>
+                                </div>
+                            </div>
+                            <div class="course-price-container">
+                                <p class="course-price">R$ 49,90</p>
+                                <button class="add-to-cart" aria-label="Adicionar ao carrinho">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                        alt="Carrinho de compras">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARTÃO DE CURSO - ELETROELETRÔNICA -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://i.pinimg.com/736x/04/56/68/04566800964a3e8d5d2a505beaf23f1b.jpg"
+                                alt="Eletroeletrônica">
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Eletroeletrônica</h3>
+                            <p class="course-instructor">Instrutor(a): Fábio Alves</p>
+                            <div class="course-rating">
+                                <div class="rating-stars">★★★★☆</div>
+                                <div class="rating-details">
+                                    <span class="rating-value">4.7</span>
+                                    <span class="rating-count">(2,845 avaliações)</span>
+                                </div>
+                            </div>
+                            <div class="course-price-container">
+                                <p class="course-price">R$ 89,90</p>
+                                <button class="add-to-cart" aria-label="Adicionar ao carrinho">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                        alt="Carrinho de compras">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARTÃO DE CURSO - DESENVOLVIMENTO FULLSTACK -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://i.pinimg.com/736x/52/19/d9/5219d9b3f4606ed553479e91b2b9b8d2.jpg"
+                                alt="Desenvolvimento Fullstack">
+                            <div class="course-badge">Novo!</div>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Pacote completo de Desenvolvimento fullstack</h3>
+                            <p class="course-instructor">Instrutor(a): Antônio Santana</p>
+                            <div class="course-rating">
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="rating-details">
+                                    <span class="rating-value">5.0</span>
+                                    <span class="rating-count">(4,752 avaliações)</span>
+                                </div>
+                            </div>
+                            <div class="course-price-container">
+                                <p class="course-price">R$ 189,90</p>
+                                <button class="add-to-cart" aria-label="Adicionar ao carrinho">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                        alt="Carrinho de compras">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARTÃO DE CURSO - ALGORITMO PARA INICIANTES -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://i.pinimg.com/736x/ac/07/28/ac072899fd1b1f09556ed1958f81e397.jpg"
+                                alt="Algoritmo para Iniciantes">
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Algoritmo para Iniciantes</h3>
+                            <p class="course-instructor">Instrutor(a): Alice Menezes</p>
+                            <div class="course-rating">
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="rating-details">
+                                    <span class="rating-value">4.9</span>
+                                    <span class="rating-count">(1,548 avaliações)</span>
+                                </div>
+                            </div>
+                            <div class="course-price-container">
+                                <p class="course-price">R$ 89,90</p>
+                                <button class="add-to-cart" aria-label="Adicionar ao carrinho">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                        alt="Carrinho de compras">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SEÇÃO DE INTELIGÊNCIA ARTIFICIAL -->
+        <section class="ai-section">
+            <div class="ai-container">
+                <div class="ai-content">
+                    <h2 class="ai-title">Aprendar a utilizar a IA para revolucionar seu aprendizado!</h2>
+                    <!-- Título da seção -->
+                    <p class="ai-description">
+                        A inteligência artificial personalizada adapta o conteúdo ao seu ritmo,
+                        oferece exercícios inteligentes e fornece feedback instantâneo para acelerar
+                        sua evolução. <!-- Descrição dos benefícios da IA -->
+                    </p>
+                </div>
+                <div class="ai-image-container">
+                    <img src="https://img.freepik.com/fotos-premium/interface-do-programa-de-fotos-gerada-por-ia_793210-2310.jpg"
+                        alt="Inteligência Artificial para educação" class="ai-image" />
+                    <!-- Imagem ilustrativa de IA -->
+                    <div class="ai-image-overlay"></div> <!-- Overlay para efeito visual -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CURSOS RECOMENDADOS - GRADE FIXA -->
+        <section class="recommended-courses">
+            <h2 class="recommended-title">Descubra cursos que vão transformar sua carreira</h2>
+
+            <!-- GRADE DE CURSOS -->
+            <div class="recommended-grid">
+
+                <!-- CARTÃO DE CURSO - DESENVOLVIMENTO WEB -->
+                <div class="recommended-card">
+                    <div class="recommended-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500"
+                            alt="Desenvolvimento Web">
+                        <div class="recommended-badge">Mais Vendido!</div>
+                    </div>
+                    <div class="recommended-content">
+                        <h3 class="recommended-course-title">Curso Completo de Desenvolvimento Web</h3>
+                        <p class="recommended-instructor">Instrutor(a): João Silva</p>
+                        <div class="recommended-rating">
+                            <div class="recommended-stars">★★★★★</div>
+                            <div class="recommended-details">
+                                <span class="recommended-value">4.8</span>
+                                <span class="recommended-count">(4,934 avaliações)</span>
+                            </div>
+                        </div>
+                        <div class="recommended-price-container">
+                            <p class="recommended-price">R$ 199,90</p>
+                            <button class="recommended-cart-btn" aria-label="Adicionar ao carrinho">
+                                <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                    alt="Carrinho de compras">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARTÃO DE CURSO - MARKETING DIGITAL -->
+                <div class="recommended-card">
+                    <div class="recommended-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500"
+                            alt="Marketing Digital">
+                    </div>
+                    <div class="recommended-content">
+                        <h3 class="recommended-course-title">Marketing Digital Completo</h3>
+                        <p class="recommended-instructor">Instrutor(a): Maria Santos</p>
+                        <div class="recommended-rating">
+                            <div class="recommended-stars">★★★★☆</div>
+                            <div class="recommended-details">
+                                <span class="recommended-value">4.5</span>
+                                <span class="recommended-count">(987 avaliações)</span>
+                            </div>
+                        </div>
+                        <div class="recommended-price-container">
+                            <p class="recommended-price">R$ 79,90</p>
+                            <button class="recommended-cart-btn" aria-label="Adicionar ao carrinho">
+                                <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                    alt="Carrinho de compras">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARTÃO DE CURSO - UI/UX DESIGN -->
+                <div class="recommended-card">
+                    <div class="recommended-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500" alt="UI/UX Design">
+                        <div class="recommended-badge">Novo!</div>
+                    </div>
+                    <div class="recommended-content">
+                        <h3 class="recommended-course-title">UI/UX Design: Do Básico ao Avançado</h3>
+                        <p class="recommended-instructor">Instrutor(a): Pedro Almeida</p>
+                        <div class="recommended-rating">
+                            <div class="recommended-stars">★★★★★</div>
+                            <div class="recommended-details">
+                                <span class="recommended-value">4.9</span>
+                                <span class="recommended-count">(2,105 avaliações)</span>
+                            </div>
+                        </div>
+                        <div class="recommended-price-container">
+                            <p class="recommended-price">R$ 249,90</p>
+                            <button class="recommended-cart-btn" aria-label="Adicionar ao carrinho">
+                                <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                    alt="Carrinho de compras">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARTÃO DE CURSO - PACOTE OFFICE -->
+                <div class="recommended-card">
+                    <div class="recommended-image">
+                        <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500"
+                            alt="Pacote Office">
+                        <div class="recommended-badge">Popular!</div>
+                    </div>
+                    <div class="recommended-content">
+                        <h3 class="recommended-course-title">Pacote Office e Windows Completo</h3>
+                        <p class="recommended-instructor">Instrutor(a): Mônica Alves</p>
+                        <div class="recommended-rating">
+                            <div class="recommended-stars">★★★★☆</div>
+                            <div class="recommended-details">
+                                <span class="recommended-value">4.8</span>
+                                <span class="recommended-count">(2,105 avaliações)</span>
+                            </div>
+                        </div>
+                        <div class="recommended-price-container">
+                            <p class="recommended-price">R$ 89,90</p>
+                            <button class="recommended-cart-btn" aria-label="Adicionar ao carrinho">
+                                <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                    alt="Carrinho de compras">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARTÃO DE CURSO - PYTHON PARA DATA SCIENCE -->
+                <div class="recommended-card">
+                    <div class="recommended-image">
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=500"
+                            alt="Python Data Science">
+                        <div class="recommended-badge">Tendência!</div>
+                    </div>
+                    <div class="recommended-content">
+                        <h3 class="recommended-course-title">Python para Data Science e Machine Learning</h3>
+                        <p class="recommended-instructor">Instrutor(a): Dr. Carlos Mendes</p>
+                        <div class="recommended-rating">
+                            <div class="recommended-stars">★★★★★</div>
+                            <div class="recommended-details">
+                                <span class="recommended-value">4.9</span>
+                                <span class="recommended-count">(6,842 avaliações)</span>
+                            </div>
+                        </div>
+                        <div class="recommended-price-container">
+                            <p class="recommended-price">R$ 299,90</p>
+                            <button class="recommended-cart-btn" aria-label="Adicionar ao carrinho">
+                                <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                    alt="Carrinho de compras">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARTÃO DE CURSO - VIRTUALIZAÇÃO -->
+                <div class="recommended-card">
+                    <div class="recommended-image">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500" alt="Virtualização">
+                        <div class="recommended-badge">Promoção!</div>
+                    </div>
+                    <div class="recommended-content">
+                        <h3 class="recommended-course-title">Virtualização e Cloud Computing</h3>
+                        <p class="recommended-instructor">Instrutor(a): Caylanne Silva</p>
+                        <div class="recommended-rating">
+                            <div class="recommended-stars">★★★★★</div>
+                            <div class="recommended-details">
+                                <span class="recommended-value">4.9</span>
+                                <span class="recommended-count">(1,012 avaliações)</span>
+                            </div>
+                        </div>
+                        <div class="recommended-price-container">
+                            <p class="recommended-price">R$ 49,90</p>
+                            <button class="recommended-cart-btn" aria-label="Adicionar ao carrinho">
+                                <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                    alt="Carrinho de compras">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARTÃO DE CURSO - ELETROELETRÔNICA -->
+                <div class="recommended-card">
+                    <div class="recommended-image">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
+                            alt="Eletroeletrônica">
+                    </div>
+                    <div class="recommended-content">
+                        <h3 class="recommended-course-title">Eletroeletrônica Básica e Avançada</h3>
+                        <p class="recommended-instructor">Instrutor(a): Fábio Alves</p>
+                        <div class="recommended-rating">
+                            <div class="recommended-stars">★★★★☆</div>
+                            <div class="recommended-details">
+                                <span class="recommended-value">4.7</span>
+                                <span class="recommended-count">(2,845 avaliações)</span>
+                            </div>
+                        </div>
+                        <div class="recommended-price-container">
+                            <p class="recommended-price">R$ 89,90</p>
+                            <button class="recommended-cart-btn" aria-label="Adicionar ao carrinho">
+                                <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                    alt="Carrinho de compras">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARTÃO DE CURSO - DESENVOLVIMENTO FULLSTACK -->
+                <div class="recommended-card">
+                    <div class="recommended-image">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500"
+                            alt="Desenvolvimento Fullstack">
+                        <div class="recommended-badge">Completo!</div>
+                    </div>
+                    <div class="recommended-content">
+                        <h3 class="recommended-course-title">Pacote Completo de Desenvolvimento Fullstack</h3>
+                        <p class="recommended-instructor">Instrutor(a): Antônio Santana</p>
+                        <div class="recommended-rating">
+                            <div class="recommended-stars">★★★★★</div>
+                            <div class="recommended-details">
+                                <span class="recommended-value">5.0</span>
+                                <span class="recommended-count">(4,752 avaliações)</span>
+                            </div>
+                        </div>
+                        <div class="recommended-price-container">
+                            <p class="recommended-price">R$ 189,90</p>
+                            <button class="recommended-cart-btn" aria-label="Adicionar ao carrinho">
+                                <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                    alt="Carrinho de compras">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARTÃO DE CURSO - EXCEL AVANÇADO -->
+                <div class="recommended-card">
+                    <div class="recommended-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500" alt="Excel Avançado">
+                        <div class="recommended-badge">Best Seller!</div>
+                    </div>
+                    <div class="recommended-content">
+                        <h3 class="recommended-course-title">Excel Avançado: Dashboards e Análise de Dados</h3>
+                        <p class="recommended-instructor">Instrutor(a): Juliana Costa</p>
+                        <div class="recommended-rating">
+                            <div class="recommended-stars">★★★★★</div>
+                            <div class="recommended-details">
+                                <span class="recommended-value">4.8</span>
+                                <span class="recommended-count">(5,234 avaliações)</span>
+                            </div>
+                        </div>
+                        <div class="recommended-price-container">
+                            <p class="recommended-price">R$ 129,90</p>
+                            <button class="recommended-cart-btn" aria-label="Adicionar ao carrinho">
+                                <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                    alt="Carrinho de compras">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARTÃO DE CURSO - CYBERSECURITY -->
+                <div class="recommended-card">
+                    <div class="recommended-image">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500" alt="Cybersecurity">
+                        <div class="recommended-badge">Em Alta!</div>
+                    </div>
+                    <div class="recommended-content">
+                        <h3 class="recommended-course-title">Cybersecurity: Segurança da Informação</h3>
+                        <p class="recommended-instructor">Instrutor(a): Dr. Roberto Ferreira</p>
+                        <div class="recommended-rating">
+                            <div class="recommended-stars">★★★★★</div>
+                            <div class="recommended-details">
+                                <span class="recommended-value">4.9</span>
+                                <span class="recommended-count">(4,156 avaliações)</span>
+                            </div>
+                        </div>
+                        <div class="recommended-price-container">
+                            <p class="recommended-price">R$ 279,90</p>
+                            <button class="recommended-cart-btn" aria-label="Adicionar ao carrinho">
+                                <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                    alt="Carrinho de compras">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARTÃO DE CURSO - FOTOGRAFIA DIGITAL -->
+                <div class="recommended-card">
+                    <div class="recommended-image">
+                        <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=500"
+                            alt="Fotografia Digital">
+                        <div class="recommended-badge">Criativo!</div>
+                    </div>
+                    <div class="recommended-content">
+                        <h3 class="recommended-course-title">Fotografia Digital: Do Básico ao Profissional</h3>
+                        <p class="recommended-instructor">Instrutor(a): Ricardo Oliveira</p>
+                        <div class="recommended-rating">
+                            <div class="recommended-stars">★★★★★</div>
+                            <div class="recommended-details">
+                                <span class="recommended-value">4.8</span>
+                                <span class="recommended-count">(2,943 avaliações)</span>
+                            </div>
+                        </div>
+                        <div class="recommended-price-container">
+                            <p class="recommended-price">R$ 139,90</p>
+                            <button class="recommended-cart-btn" aria-label="Adicionar ao carrinho">
+                                <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                    alt="Carrinho de compras">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARTÃO DE CURSO - INGLÊS PARA NEGÓCIOS -->
+                <div class="recommended-card">
+                    <div class="recommended-image">
+                        <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=500"
+                            alt="Inglês para Negócios">
+                        <div class="recommended-badge">Certificado!</div>
+                    </div>
+                    <div class="recommended-content">
+                        <h3 class="recommended-course-title">Inglês para Negócios e Carreira</h3>
+                        <p class="recommended-instructor">Instrutor(a): Prof. Richard Thompson</p>
+                        <div class="recommended-rating">
+                            <div class="recommended-stars">★★★★★</div>
+                            <div class="recommended-details">
+                                <span class="recommended-value">4.7</span>
+                                <span class="recommended-count">(3,891 avaliações)</span>
+                            </div>
+                        </div>
+                        <div class="recommended-price-container">
+                            <p class="recommended-price">R$ 159,90</p>
+                            <button class="recommended-cart-btn" aria-label="Adicionar ao carrinho">
+                                <img src="https://cdn-icons-png.flaticon.com/512/4396/4396208.png"
+                                    alt="Carrinho de compras">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO "EM ALTA AGORA" (TRENDING SKILLS) -->
+        <section class="trending-skills">
+            <div class="trending-header">
+                <h2 class="trending-main-title">Em alta agora</h2> <!-- Título da seção -->
+                <p class="trending-subtitle">ChatGPT é uma habilidade em alta</p> <!-- Subtítulo com destaque -->
+                <div class="trending-cta">
+                    <a href="#" class="skill-link">Ver cursos de ChatGPT</a> <!-- Link para cursos de ChatGPT -->
+                    <span class="student-count">4.997.191 alunos</span> <!-- Contador de alunos -->
+                </div>
+                <a href="#" class="view-all-skills">Mostrar todas as habilidades em alta →</a>
+                <!-- Link para ver todas as habilidades -->
+            </div>
+
+            <div class="skills-grid"> <!-- Grid de habilidades em alta -->
+                <!-- COLUNA DESENVOLVIMENTO -->
+                <div class="skills-column">
+                    <h3 class="skills-category-title">Desenvolvimento</h3> <!-- Título da categoria -->
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span> <!-- Nome da habilidade -->
+                        <span class="skill-students">49.224.835 alunos</span> <!-- Número de alunos -->
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Desenvolvimento Web</span>
+                        <span class="skill-students">14.285.742 alunos</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Data Science</span>
+                        <span class="skill-students">8.097.712 alunos</span>
+                    </div>
+                </div>
+
+                <!-- COLUNA DESIGN -->
+                <div class="skills-column">
+                    <h3 class="skills-category-title">Design</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Blender</span>
+                        <span class="skill-students">3.035.175 alunos</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Design gráfico</span>
+                        <span class="skill-students">4.611.531 alunos</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Design de experiência do usuário (UX)</span>
+                        <span class="skill-students">2.117.616 alunos</span>
+                    </div>
+                </div>
+
+                <!-- COLUNA NEGÓCIOS -->
+                <div class="skills-column">
+                    <h3 class="skills-category-title">Negócios</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">PMI Project Management Professional (PMP)</span>
+                        <span class="skill-students">2.728.520 alunos</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Microsoft Power BI</span>
+                        <span class="skill-students">4.933.750 alunos</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">PMI Certified Associate in Project Management (CAPM)</span>
+                        <span class="skill-students">454.977 alunos</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-link" style="margin-left: 0;">
+                <span style="margin-left:31px ;">*Dados baseados globalmente.</span>
+            </div>
+        </section>
+    </main>
+    <!-- ========================= FOOTER ========================== -->
+    <script src="/Front-end/JavaScript/loadFooter.js"></script>
+</body>
+
+</html>
